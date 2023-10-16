@@ -246,6 +246,58 @@ textarea {
 }
 
 /* ------------------------------------------------------------------------ */
+/*                                  HEADER                                  */
+/* ------------------------------------------------------------------------ */
+
+header {
+  background-color: #223f77;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/*                                   MAIN                                   */
+/* ------------------------------------------------------------------------ */
+body {
+  background-color: #b7cfff;
+}
+
+.hero-banner {
+  height: calc(45vh - 2.5rem);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-image: url('../img/hero-banner3.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.entry-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.04rem;
+  line-height: 1.2;  
+}
+
+
+/* ------------------------------------------------------------------------ */
 /*                                  FOOTER                                  */
 /* ------------------------------------------------------------------------ */
 
