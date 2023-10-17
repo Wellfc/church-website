@@ -274,14 +274,19 @@ header a {
 /* ------------------------------------------------------------------------ */
 body {
   background-color: #b7cfff;
+  font-family: "Inter", sans-serif;
+}
+
+section {
+  min-height: 100vh;
 }
 
 .hero-banner {
   height: calc(45vh - 2.5rem);
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  background-image: url('../img/hero-banner3.jpg');
+  background-image: url("../img/hero-banner3.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
@@ -293,9 +298,79 @@ body {
   font-weight: 600;
   color: #fff;
   letter-spacing: 0.04rem;
-  line-height: 1.2;  
+  line-height: 1.2;
 }
 
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.contact-info-container h2,
+.google-map-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  line-height: 1.2;
+}
+
+.contact-info-container h3,
+.google-map-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-container p,
+.contact-info-container a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.google-map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.google-map {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  .contact-info-map {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .google-map-container {
+    aspect-ratio: 16/9;
+    width: 50%;
+    align-items: flex-start;
+  }
+}
 
 /* ------------------------------------------------------------------------ */
 /*                                  FOOTER                                  */
